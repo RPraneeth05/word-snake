@@ -242,7 +242,7 @@ def start_screen():
 
         MENU_MOUSE_POS = pygame.mouse.get_pos()
 
-        MENU_TEXT = get_font(100).render("Word Snake", True, "#b68f40")
+        MENU_TEXT = get_font(90).render("Word Hunter", True, "#b68f40")
         MENU_RECT = MENU_TEXT.get_rect(center=(320, 140))
 
 
