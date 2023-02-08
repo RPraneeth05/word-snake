@@ -55,7 +55,11 @@ def play(difficulty):
 
     # words = ["BENCH", "BUNCH", "CHAIR", "CHALK", "CHASE", "CLIFF", "CLOUD",
     #         "DANCE", "FLASH", "GREET", "GLASS", "PLANT", "SHINE", "UNION"]
-    words = ["PENIS"]
+
+
+
+    words = ["BENCH", "BUNCH", "CHAIR", "FALSE", "UNDER", "CLOUD", "DANCE", "PLANT", "EARTH", "PRINT", "FLASH", "ZEBRA", "CAKES", "RADIO", "PAGES", "ZONED", "VAPOR", "VAGUE", "UNVLE", "SADLY", "QUERY", "PAGES", "NAMES", "NASTY", "MAGIC", "JEANS", "HOMES", "HABIT", "FUMES", "EDICT", "BAGEL", "CABLE", "DAILY", "DAISY", "DARES", "CABIN", "HALVE", "FANCY", "ICONS", "LAMPS", "QUILT", "SALON", "UNBOX", "VAULT", "YACHT", "ZONED", "WAGON"]
+
 
     word = choice(words)
     word_list = list(word)
@@ -249,16 +253,16 @@ def start_screen():
         DIFF = get_font(50).render("Difficulty", True, "#b68f40")
         DIFF_TXT = DIFF.get_rect(center=(320, 250))
         EASY = Button(image=pygame.image.load("assets/tiny.png"), pos=(160, 350), 
-                            text_input="1", font=get_font(75), base_color="#d7fcd4", hovering_color="White")
+                            text_input="1", font=get_font(75), base_color="#200535", hovering_color="White")
         
         MEDIUM = Button(image=pygame.image.load("assets/tiny.png"), pos=(320, 350), 
-                            text_input="2", font=get_font(75), base_color="#d7fcd4", hovering_color="White")
+                            text_input="2", font=get_font(75), base_color="#200535", hovering_color="White")
         
         HARD = Button(image=pygame.image.load("assets/tiny.png"), pos=(480, 350), 
-                            text_input="3", font=get_font(75), base_color="#d7fcd4", hovering_color="White")
+                            text_input="3", font=get_font(75), base_color="#200535", hovering_color="White")
 
         QUIT_BUTTON = Button(image=pygame.image.load("assets/small.png"), pos=(320, 500), 
-                            text_input="Quit", font=get_font(75), base_color="#d7fcd4", hovering_color="White")
+                            text_input="Quit", font=get_font(75), base_color="#200535", hovering_color="White")
 
         SCREEN.blit(MENU_TEXT, MENU_RECT)
         SCREEN.blit(DIFF, DIFF_TXT)
@@ -295,9 +299,9 @@ def instructions(carryover):
         INS2 = get_font(25).render("Pick up letters in order", True, "#b68f40")
         INSR2 = MENU_TEXT.get_rect(center=(320, 260))
         PLAY_BUTTON = Button(image=pygame.image.load("assets/small.png"), pos=(320, 320), 
-                            text_input="Continue", font=get_font(75), base_color="#d7fcd4", hovering_color="White")
+                            text_input="Continue", font=get_font(75), base_color="#200535", hovering_color="White")
         QUIT_BUTTON = Button(image=pygame.image.load("assets/small.png"), pos=(320, 500), 
-                            text_input="Quit", font=get_font(75), base_color="#d7fcd4", hovering_color="White")
+                            text_input="Quit", font=get_font(75), base_color="#200535", hovering_color="White")
         SCREEN.blit(MENU_TEXT, MENU_RECT)
         SCREEN.blit(INS, INSR)
         SCREEN.blit(INS2, INSR2)
@@ -328,9 +332,9 @@ def end_screen(score):
         MENU_RECT = MENU_TEXT.get_rect(center=(320, 140))
 
         PLAY_BUTTON = Button(image=pygame.image.load("assets/small.png"), pos=(320, 320), 
-                            text_input="Retry", font=get_font(75), base_color="#d7fcd4", hovering_color="White")
+                            text_input="Retry", font=get_font(75), base_color="#200535", hovering_color="White")
         QUIT_BUTTON = Button(image=pygame.image.load("assets/small.png"), pos=(320, 500), 
-                            text_input="Quit", font=get_font(75), base_color="#d7fcd4", hovering_color="White")
+                            text_input="Quit", font=get_font(75), base_color="#200535", hovering_color="White")
 
         SCREEN.blit(MENU_TEXT, MENU_RECT)
 
